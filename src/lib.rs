@@ -7,7 +7,7 @@
 //! # Examples
 //!
 //! ```
-//! use string_algo_prime::PrimeSignature;
+//! use arithmos::PrimeSignature;
 //!
 //! let s1 = PrimeSignature::new(b"listen");
 //! let s2 = PrimeSignature::new(b"silent");
@@ -147,7 +147,7 @@ impl PrimeSignature {
 /// # Examples
 ///
 /// ```
-/// use string_algo_prime::{PrimeSignature, find_anagram_windows};
+/// use arithmos::{PrimeSignature, find_anagram_windows};
 ///
 /// let needle = PrimeSignature::new(b"abc");
 /// let positions = find_anagram_windows(b"cbadabca", &needle);

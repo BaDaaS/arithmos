@@ -1,7 +1,7 @@
 use std::hint::black_box;
 
 use criterion::{Criterion, criterion_group, criterion_main};
-use string_algo_prime::{PrimeSignature, find_anagram_windows};
+use arithmos::{PrimeSignature, find_anagram_windows};
 
 fn bench_signature_creation(c: &mut Criterion) {
     let input = b"the quick brown fox jumps over the lazy dog";
