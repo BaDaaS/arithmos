@@ -1,0 +1,29 @@
+[package]
+name = "string-algo-prime"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.8.2"
+proptest = "1.10.0"
+
+[lints.clippy]
+nursery = "warn"
+pedantic = "warn"
+perf = "warn"
+
+[[bench]]
+harness = false
+name = "benchmark"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+
+[profile.dev.package."*"]
+opt-level = 2
