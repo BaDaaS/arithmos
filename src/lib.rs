@@ -19,8 +19,8 @@
 //! ```
 
 #![deny(clippy::all)]
-#![warn(clippy::pedantic)]
-#![warn(clippy::nursery)]
+#![deny(clippy::pedantic)]
+#![deny(clippy::nursery)]
 
 /// Lookup table: ASCII byte -> prime (0 = not a lowercase letter).
 ///

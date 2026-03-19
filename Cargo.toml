@@ -3,6 +3,7 @@ name = "arithmos"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.93"
+license = "MIT"
 
 [dependencies]
 
@@ -11,9 +12,9 @@ criterion = "0.8.2"
 proptest = "1.10.0"
 
 [lints.clippy]
-nursery = "warn"
-pedantic = "warn"
-perf = "warn"
+nursery = "deny"
+pedantic = "deny"
+perf = "deny"
 
 [[bench]]
 harness = false
