@@ -9,7 +9,7 @@ license = "MIT"
 
 [dev-dependencies]
 criterion = "0.8.2"
-proptest = "1.10.0"
+proptest = "1.11.0"
 
 [lints.clippy]
 nursery = "deny"
